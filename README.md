@@ -45,7 +45,7 @@ Workflow
 We can identify 3 steps:
 
 - **1º)** Obtaining Data: In this case we are talking about historical data because contains information on both the features of the observations and the outcome.
-- **2º)** Analysis of the dataset chacking for nulls and looking for correlations
+- **2º)** Analysis of the dataset checking for nulls and looking for correlations
 - **3º)** Data cleaning and feature engineering:
 
     - Unit conversion checking
@@ -69,5 +69,11 @@ We can identify 3 steps:
 Best Model
 ================
 
+On my best model  what I did was:
+
+- On data cleaning I delete city column, and bin the dataset on the carat because of the correlation to the price. This helped me to have a balance data train and data test. For the scaling I applyed Normalization to the numeric columns. One-hot encoding to the categorical features. There weren't missing values, so nothing to do there.
+- Selecting & training the model, I fitted the RandomForest Model just to the train set and then predict the test set.
+
 Analysis
 ==============
+Carat was 
